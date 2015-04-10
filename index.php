@@ -37,7 +37,7 @@
         <div role="tabpanel">
 
             <!-- Nav tabs -->
-            <ul class="nav nav-tabs" role="tablist">
+            <ul class="nav nav-tabs row" role="tablist">
                 <li role="presentation" class="active">
                     <a href="#random-map" aria-controls="random-map" role="tab" data-toggle="tab">Random Map <small>110</small></a>
                 </li>
@@ -83,6 +83,15 @@
                         <label>
                             <input type="checkbox"> Hide Full
                         </label>
+                    </div>
+                </div>
+                <div class="toolbar-li">
+                    <div class="rating-limiter">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="0">
+                            <span class="input-group-addon">-</span>
+                            <input type="text" class="form-control" placeholder="10000">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -141,26 +150,26 @@
 
 
 <section class="ui-layout-east users">
-    <div class="container-fluid">
-        <div class="account">
-            <!-- Single button -->
-            <div class="btn-group btn-group-justified">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                        <img src="profile.jpg" />
-                        <span class="username">BrysonWF</span>
-                        <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Profile</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Logout</a></li>
-                    </ul>
-                </div>
+    <div class="account">
+        <!-- Single button -->
+        <div class="btn-group btn-group-justified">
+            <div class="btn-group">
+                <button type="button" class="btn btn-info btn-block dropdown-toggle text-left" data-toggle="dropdown" aria-expanded="false">
+                    <img src="profile.jpg" />
+                    <span class="username">BrysonWF (1650)</span>
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Profile and History</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
             </div>
         </div>
+    </div>
+    <div class="container-fluid">
         <h4>Friends</h4>
-        <ul class="list-group friends">
+        <ul class="list-group user-list friends-list">
             <li class="list-group-item">
                 <span class="badge rating">1850</span>
                 <span class="username">AnotherGuy</span>
@@ -175,7 +184,7 @@
             </li>
         </ul>
         <h4>Everyone <small><a href="#">Leaderboard</a></small></h4>
-        <ul class="list-group everyone">
+        <ul class="list-group user-list everyone-list">
             <li class="list-group-item">
                 <span class="badge rating">1850</span>
                 <span class="username">AnotherGuy</span>

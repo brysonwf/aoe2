@@ -13,9 +13,17 @@
 }
 
 
+/* tabs */
+.nav-tabs{
+    margin-top: 20px;
+}
+
 /* toolbar */
 .toolbar{
     padding: 15px;
+    border-radius: 0;
+    border: 0;
+    box-shadow: none;
 }
 .toolbar .toolbar-li{
     float: right;
@@ -30,6 +38,10 @@
     margin-bottom:7px;
 }
 .toolbar .search{
+    width:200px;
+}
+
+.toolbar .rating-limiter{
     width:200px;
 }
 
@@ -60,14 +72,14 @@
     position: absolute;
     bottom: 0;
     right: 0;
-    border-left: 1px solid rgba(0,0,0,.1);;
-    border-top: 1px solid rgba(0,0,0,.1);;
-    border-radius: 10%;
+    /*border-left: 1px solid rgba(0,0,0,.1);;*/
+    /*border-top: 1px solid rgba(0,0,0,.1);;*/
+    /*border-radius: 10%;*/
     margin:0;
     padding:0 4px;
     font-size:1em;
-    color:#ccc;
-    background-color: rgba(255,255,255,.5);
+    /*color:#ccc;*/
+    /*background-color: rgba(255,255,255,.5);*/
 }
 .games-list li .title{
     padding: 0;
@@ -82,4 +94,24 @@
 }
 .games-list li .host{
     color: rgba(0,0,0,.5);
+}
+
+
+
+/* user list */
+
+.account .btn{
+    border-radius: 0;
+}
+
+.user-list{
+    border-radius: 0;
+}
+.user-list li{
+    border:0;
+    padding-left: 0;
+    padding-right: 0;
+    border-top:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    border-radius: 0 !important;
 }

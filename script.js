@@ -8,3 +8,7 @@ $(document).ready(function () {
         //,	west__fxSettings_open: { easing: "easeOutBounce", duration: 750 }
     });
 });
+
+$(document).ready(function() {
+    $('#example-getting-started').multiselect();
+});

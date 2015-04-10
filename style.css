@@ -1,11 +1,5 @@
 
-/**
- *	Basic Layout Theme
- *
- *	This theme uses the default layout class-names for all classes
- *	Add any 'custom class-names', from options: paneClass, resizerClass, togglerClass
- */
-
+/*	Panes */
 .ui-layout-pane { /* all 'panes' */
     overflow: auto;
 }
@@ -16,4 +10,76 @@
 
 .ui-layout-toggler { /* all 'toggler-buttons' */
     background: #AAA;
-} 
+}
+
+
+/* toolbar */
+.toolbar{
+    padding: 15px;
+}
+.toolbar .toolbar-li{
+    float: right;
+    margin-left:20px;
+}
+.toolbar .toolbar-li-games{
+    float: left;
+    margin-left: 0;
+}
+.toolbar .checkbox{
+    margin-top:7px;
+    margin-bottom:7px;
+}
+.toolbar .search{
+    width:200px;
+}
+
+/* game */
+.games-list{
+}
+.games-list li a{
+    position: relative;
+    color:#000;
+}
+.games-list li a:hover{
+    text-decoration: none;
+}
+.games-list li .number{
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-left: 1px solid rgba(0,0,0,.05);
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-radius: 10%;
+    margin:0;
+    padding:0 4px;
+    font-size:1em;
+    color:rgba(0,0,0,.3);;
+    background-color: rgba(255,255,255,.4);
+}
+.games-list li .occupancy{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-left: 1px solid rgba(0,0,0,.1);;
+    border-top: 1px solid rgba(0,0,0,.1);;
+    border-radius: 10%;
+    margin:0;
+    padding:0 4px;
+    font-size:1em;
+    color:#ccc;
+    background-color: rgba(255,255,255,.5);
+}
+.games-list li .title{
+    padding: 0;
+    margin:0;
+    font-size:1.2em;
+}
+.games-list li .location{
+    padding: 0;
+    margin:0;
+    font-size:1em;
+    font-weight:bold;
+}
+.games-list li .host{
+    color: rgba(0,0,0,.5);
+}

@@ -15,6 +15,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="bootstrap-multiselect.css" type="text/css"/>
 
     <!-- Custom styles for this template -->
     <link href="style.css" rel="stylesheet">
@@ -32,17 +33,8 @@
 
 
 <section class="ui-layout-center main">
-    <div class="games-list container-fluid">
+    <div class="container-fluid">
         <div role="tabpanel">
-
-
-            <div class="toolbar text-right">
-                <div class="checkbox">
-                    <label>
-                        <input type="checkbox"> Show Forgotten
-                    </label>
-                </div>
-            </div>
 
             <!-- Nav tabs -->
             <ul class="nav nav-tabs" role="tablist">
@@ -55,37 +47,82 @@
                 <li role="presentation">
                     <a href="#custom-senario" aria-controls="custom-senario" role="tab" data-toggle="tab">Custom Senario <small>30</small></a>
                 </li>
-
             </ul>
+
+            <div class="toolbar well row clearfix">
+                <div class="toolbar-li toolbar-li-games">
+                    <label>Map:</label>
+                    <select id="example-getting-started" multiple="multiple">
+                        <option value="Arabia" selected>Arabia</option>
+                        <option value="Arena" selected>Arena</option>
+                        <option value="Blackforest" selected>Blackforest</option>
+                        <option value="Megarandom" selected>Megarandom</option>
+                        <option value="Islands" selected>Islands</option>
+                        <option value="Nomad" selected>Nomad</option>
+                    </select>
+                </div>
+                <div class="toolbar-li">
+                    <div class="search">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Search">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+                        </span>
+                        </div><!-- /input-group -->
+                    </div>
+                </div>
+                <div class="toolbar-li">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Show Forgotten
+                        </label>
+                    </div>
+                </div>
+                <div class="toolbar-li">
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Hide Full
+                        </label>
+                    </div>
+                </div>
+            </div>
 
             <!-- Tab panes -->
             <div class="tab-content">
                 <div role="tabpanel" class="tab-pane active" id="random-map">
-                    <ol class="list-unstyled row">
-                        <li class="col-sm-3">
+                    <ol class="games-list list-unstyled row">
+                        <li class="col-lg-2 col-md-3 col-sm-4">
                             <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                                <h2><span class="sr-only">Game </span>1</h2>
+                                <div class="number"><span class="sr-only">Game </span>1</div>
+                                <h2 class="title">Blackforest 2v2</h2>
+                                <h3 class="location">Blackforest</h3>
                                 <div class="host">BrysonWF</div>
                                 <div class="occupancy">3/8</div>
                             </a>
                         </li>
-                        <li class="col-sm-3">
+                        <li class="col-lg-2 col-md-3 col-sm-4">
                             <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                                <h2><span class="sr-only">Game </span>2</h2>
+                                <div class="number"><span class="sr-only">Game </span>2</div>
+                                <h2 class="title">Blackforest 2v2</h2>
+                                <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
                                 <div class="occupancy">3/8</div>
                             </a>
                         </li>
-                        <li class="col-sm-3">
+                        <li class="col-lg-2 col-md-3 col-sm-4">
                             <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                                <h2><span class="sr-only">Game </span>3</h2>
+                                <div class="number"><span class="sr-only">Game </span>3</div>
+                                <h2 class="title">Blackforest 2v2</h2>
+                                <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
                                 <div class="occupancy">3/8</div>
                             </a>
                         </li>
-                        <li class="col-sm-3">
+                        <li class="col-lg-2 col-md-3 col-sm-4">
                             <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                                <h2><span class="sr-only">Game </span>4</h2>
+                                <div class="number"><span class="sr-only">Game </span>4</div>
+                                <h2 class="title">Blackforest 2v2</h2>
+                                <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
                                 <div class="occupancy">3/8</div>
                             </a>
@@ -115,7 +152,7 @@
                         <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">History</a></li>
+                        <li><a href="#">Profile</a></li>
                         <li class="divider"></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
@@ -137,7 +174,7 @@
                 <span class="username">Other User</span>
             </li>
         </ul>
-        <h4>Everyone - <small><a href="#">Leaderboard</a></small></h4>
+        <h4>Everyone <small><a href="#">Leaderboard</a></small></h4>
         <ul class="list-group everyone">
             <li class="list-group-item">
                 <span class="badge rating">1850</span>
@@ -181,91 +218,7 @@
     </div>
 </section>
 
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title">Game 3</h4>
-            </div>
-            <div class="modal-body">
-                <table class="lobby-details-table">
-                    <tbody>
-                    <tr>
-                        <td colspan="3">
-                            <table>
-                                <tbody>
-                                <tr>
-                                    <td>
-                                        <b>Game</b>
-                                    </td>
-                                    <td>Random Map</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Map Size</b></td>
-                                    <td>Normal (6 player)</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Age</b></td>
-                                    <td>Standard</td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <b>Population</b>
-                                    </td>
-                                    <td>400</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Resources</b></td>
-                                    <td>Standard</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Victory</b></td>
-                                    <td>Conquest</td>
-                                </tr>
-                                <tr>
-                                    <td><b>Ranked</b></td>
-                                    <td>Yes</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Restore</b></td>
-                                    <td>No</td>
-                                    <td>&nbsp;</td>
-                                    <td><b>Cheats Enabled</b></td>
-                                    <td>No</td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="lobby-details-player-cell">
-                            <table>
-                                <tbody>
-                                <tr>
-                                    <th>&nbsp;</th><th>Elo</th><th>Name</th><th>Games</th><th>Streak</th>
-                                    <th>Wins</th><th>Drops</th></tr><tr><td>
-                                    <a href="javascript:addFriend('76561198044287480', 'Claudia%20%26lt%3B3')">
-                                        <span class="glyphicon glyphicon-plus-sign"></span>
-                                    </a>
-                                </td>
-                                    <td>1658</td><td><a href="javascript:viewProfile('76561198044287480')">Claudia &lt;3</a>
-                                    </td><td>471</td><td>+1</td><td>47%</td><td>1%</td></tr><tr><td>
-                                    <a href="javascript:addFriend('76561198041832273', '%5BNLK%5DNalle')">
-                                        <span class="glyphicon glyphicon-plus-sign"></span></a></td><td>1690</td>
-                                    <td><a href="javascript:viewProfile('76561198041832273')">[NLK]Nalle</a></td>
-                                    <td>275</td><td>+1</td><td>48%</td><td>13%</td></tr></tbody></table></td>
-                        <td>&nbsp;</td><td class="lobby-details-player-cell"><table><tbody><tr><th>&nbsp;</th>
-                        <th>Elo</th><th>Name</th><th>Games</th><th>Streak</th><th>Wins</th><th>Drops</th></tr>
-                    <tr><td><a href="javascript:addFriend('76561198022942287', '%5BNLK%5DLuppaKorva')">
-                        <span class="glyphicon glyphicon-plus-sign"></span></a></td><td>1849</td><td>
-                        <a href="javascript:viewProfile('76561198022942287')">[NLK]LuppaKorva</a></td>
-                        <td>194</td><td>+1</td><td>55%</td><td>12%</td></tr></tbody></table></td></tr>
-                    </tbody></table>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Join</button>
-            </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
+<?php include '_modal-game.php'; ?>
 
 
 <!-- JavaScript -->
@@ -273,6 +226,7 @@
 <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script src="jquery.layout.js"></script>
+<script type="text/javascript" src="bootstrap-multiselect.js"></script>
 
 <!-- Custom JavaScript -->
 <script src="script.js"></script>

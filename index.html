@@ -33,114 +33,151 @@
 
 <section class="ui-layout-center main">
     <div class="games-list container-fluid">
-        <ol class="list-unstyled row">
-            <li class="col-sm-3">
-                <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                    <h2><span class="sr-only">Game </span>1</h2>
-                    <div class="host">BrysonWF</div>
-                    <div class="occupancy">3/8</div>
-                </a>
-            </li>
-            <li class="col-sm-3">
-                <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                    <h2><span class="sr-only">Game </span>2</h2>
-                    <div class="host">OtherUser</div>
-                    <div class="occupancy">3/8</div>
-                </a>
-            </li>
-            <li class="col-sm-3">
-                <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                    <h2><span class="sr-only">Game </span>3</h2>
-                    <div class="host">OtherUser</div>
-                    <div class="occupancy">3/8</div>
-                </a>
-            </li>
-            <li class="col-sm-3">
-                <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
-                    <h2><span class="sr-only">Game </span>4</h2>
-                    <div class="host">OtherUser</div>
-                    <div class="occupancy">3/8</div>
-                </a>
-            </li>
-        </ol>
+        <div role="tabpanel">
+
+
+            <div class="toolbar text-right">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox"> Show Forgotten
+                    </label>
+                </div>
+            </div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                    <a href="#random-map" aria-controls="random-map" role="tab" data-toggle="tab">Random Map <small>110</small></a>
+                </li>
+                <li role="presentation">
+                    <a href="#death-match" aria-controls="death-match" role="tab" data-toggle="tab">Death Match <small>30</small></a>
+                </li>
+                <li role="presentation">
+                    <a href="#custom-senario" aria-controls="custom-senario" role="tab" data-toggle="tab">Custom Senario <small>30</small></a>
+                </li>
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="random-map">
+                    <ol class="list-unstyled row">
+                        <li class="col-sm-3">
+                            <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
+                                <h2><span class="sr-only">Game </span>1</h2>
+                                <div class="host">BrysonWF</div>
+                                <div class="occupancy">3/8</div>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
+                                <h2><span class="sr-only">Game </span>2</h2>
+                                <div class="host">OtherUser</div>
+                                <div class="occupancy">3/8</div>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
+                                <h2><span class="sr-only">Game </span>3</h2>
+                                <div class="host">OtherUser</div>
+                                <div class="occupancy">3/8</div>
+                            </a>
+                        </li>
+                        <li class="col-sm-3">
+                            <a href="#" class="center-block well" data-toggle="modal" data-target="#myModal">
+                                <h2><span class="sr-only">Game </span>4</h2>
+                                <div class="host">OtherUser</div>
+                                <div class="occupancy">3/8</div>
+                            </a>
+                        </li>
+                    </ol>
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="death-match">...</div>
+                <div role="tabpanel" class="tab-pane" id="custom-senario">...</div>
+            </div>
+
+        </div>
+
     </div>
 </section>
 
 
 <section class="ui-layout-east users">
-    <div class="account">
-        <!-- Single button -->
-        <div class="btn-group btn-group-justified">
-            <div class="btn-group">
-                <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                    <img src="profile.jpg" />
-                    <span class="username">BrysonWF</span>
-                    <span class="caret"></span>
-                </button>
-                <ul class="dropdown-menu" role="menu">
-                    <li><a href="#">Game History</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                </ul>
+    <div class="container-fluid">
+        <div class="account">
+            <!-- Single button -->
+            <div class="btn-group btn-group-justified">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-info btn-block dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <img src="profile.jpg" />
+                        <span class="username">BrysonWF</span>
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">History</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <h4>Friends</h4>
+        <ul class="list-group friends">
+            <li class="list-group-item">
+                <span class="badge rating">1850</span>
+                <span class="username">AnotherGuy</span>
+            </li>
+            <li class="list-group-item">
+                <span class="badge rating">1650</span>
+                <span class="username">BrysonWF</span>
+            </li>
+            <li class="list-group-item">
+                <span class="badge rating">1250</span>
+                <span class="username">Other User</span>
+            </li>
+        </ul>
+        <h4>Everyone - <small><a href="#">Leaderboard</a></small></h4>
+        <ul class="list-group everyone">
+            <li class="list-group-item">
+                <span class="badge rating">1850</span>
+                <span class="username">AnotherGuy</span>
+            </li>
+            <li class="list-group-item">
+                <span class="badge rating">1650</span>
+                <span class="username">BrysonWF</span>
+            </li>
+            <li class="list-group-item">
+                <span class="badge rating">1250</span>
+                <span class="username">Other User</span>
+            </li>
+        </ul>
     </div>
-    <h4>Friends</h4>
-    <ul class="list-group friends">
-        <li class="list-group-item">
-            <span class="badge rating">1850</span>
-            <span class="username">AnotherGuy</span>
-        </li>
-        <li class="list-group-item">
-            <span class="badge rating">1650</span>
-            <span class="username">BrysonWF</span>
-        </li>
-        <li class="list-group-item">
-            <span class="badge rating">1250</span>
-            <span class="username">Other User</span>
-        </li>
-    </ul>
-    <h4>Everyone</h4>
-    <ul class="list-group everyone">
-        <li class="list-group-item">
-            <span class="badge rating">1850</span>
-            <span class="username">AnotherGuy</span>
-        </li>
-        <li class="list-group-item">
-            <span class="badge rating">1650</span>
-            <span class="username">BrysonWF</span>
-        </li>
-        <li class="list-group-item">
-            <span class="badge rating">1250</span>
-            <span class="username">Other User</span>
-        </li>
-    </ul>
 </section>
 
 
 <section class="ui-layout-south chat">
-    <ul class="list-unstyled">
-        <li>
-            <span class="user">BrysonWF</span>
-            <span class="colon">:</span>
-            <span class="message">!!!!!!!!!!!!!!!!!!!!!!!!!&*&*&2v2 Blackforest game 1!!!!!!!!!!!!!!!!!!!!!!!!!&*&*&</span>
-        </li>
-        <li>
-            <span class="user">OtherGuy</span>
-            <span class="colon">:</span>
-            <span class="message">woot chat</span>
-        </li>
-    </ul>
     <div class="container-fluid">
-        <div class="row">
-            <form class="form-group chat-input">
-                <div class="col-sm-8">
-                    <textarea placeholder="type to chat" class="form-control"></textarea>
-                </div>
-                <button type="button" class="btn btn-primary col-sm-4">></button>
-            </form>
-        </div>
+        <ul class="list-unstyled">
+            <li>
+                <span class="user">BrysonWF</span>
+                <span class="colon">:</span>
+                <span class="message">!!!!!!!!!!!!!!!!!!!!!!!!!&*&*&2v2 Blackforest game 1!!!!!!!!!!!!!!!!!!!!!!!!!&*&*&</span>
+            </li>
+            <li>
+                <span class="user">OtherGuy</span>
+                <span class="colon">:</span>
+                <span class="message">woot chat</span>
+            </li>
+        </ul>
+        <form class="row">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Hi, welcome to AOE2! Send Chat Messages here.">
+                    <span class="input-group-btn">
+                    <button class="btn btn-primary" type="button">Send</button>
+                </span>
+            </div><!-- /input-group -->
+        </form>
     </div>
 </section>
 

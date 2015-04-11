@@ -39,13 +39,22 @@
             <!-- Nav tabs -->
             <ul class="nav nav-tabs row" role="tablist">
                 <li role="presentation" class="active">
-                    <a href="#random-map" aria-controls="random-map" role="tab" data-toggle="tab">Random Map <small>110</small></a>
+                    <a href="#random-map" aria-controls="random-map" role="tab" data-toggle="tab">
+                        Random Map
+                        <small><span class="glyphicon glyphicon-user"></span> 110</small>
+                    </a>
                 </li>
                 <li role="presentation">
-                    <a href="#death-match" aria-controls="death-match" role="tab" data-toggle="tab">Death Match <small>30</small></a>
+                    <a href="#death-match" aria-controls="death-match" role="tab" data-toggle="tab">
+                        Death Match
+                        <small><span class="glyphicon glyphicon-user"></span> 30</small>
+                    </a>
                 </li>
                 <li role="presentation">
-                    <a href="#custom-senario" aria-controls="custom-senario" role="tab" data-toggle="tab">Custom Senario <small>30</small></a>
+                    <a href="#custom-senario" aria-controls="custom-senario" role="tab" data-toggle="tab">
+                        Custom Senario
+                        <small><span class="glyphicon glyphicon-user"></span> 30</small>
+                    </a>
                 </li>
             </ul>
 
@@ -74,14 +83,14 @@
                 <div class="toolbar-li">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Show Forgotten
+                            <input type="checkbox" checked> Forgotten
                         </label>
                     </div>
                 </div>
                 <div class="toolbar-li">
                     <div class="checkbox">
                         <label>
-                            <input type="checkbox"> Hide Full
+                            <input type="checkbox" checked> Full
                         </label>
                     </div>
                 </div>
@@ -106,7 +115,7 @@
                                 <h2 class="title">Blackforest 2v2</h2>
                                 <h3 class="location">Blackforest</h3>
                                 <div class="host">BrysonWF</div>
-                                <div class="occupancy">3/8</div>
+                                <div class="occupancy"><span class="glyphicon glyphicon-user"></span> 3/8</div>
                             </a>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4">
@@ -115,7 +124,7 @@
                                 <h2 class="title">Blackforest 2v2</h2>
                                 <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
-                                <div class="occupancy">3/8</div>
+                                <div class="occupancy"><span class="glyphicon glyphicon-user"></span> 3/8</div>
                             </a>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4">
@@ -124,7 +133,7 @@
                                 <h2 class="title">Blackforest 2v2</h2>
                                 <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
-                                <div class="occupancy">3/8</div>
+                                <div class="occupancy"><span class="glyphicon glyphicon-user"></span> 3/8</div>
                             </a>
                         </li>
                         <li class="col-lg-2 col-md-3 col-sm-4">
@@ -133,7 +142,7 @@
                                 <h2 class="title">Blackforest 2v2</h2>
                                 <h3 class="location">Blackforest</h3>
                                 <div class="host">OtherUser</div>
-                                <div class="occupancy">3/8</div>
+                                <div class="occupancy"><span class="glyphicon glyphicon-user"></span> 3/8</div>
                             </a>
                         </li>
                     </ol>
@@ -169,35 +178,37 @@
     </div>
     <div class="container-fluid">
         <h4>Friends</h4>
-        <ul class="list-group user-list friends-list">
-            <li class="list-group-item">
-                <span class="badge rating">1850</span>
-                <span class="username">AnotherGuy</span>
-            </li>
-            <li class="list-group-item">
-                <span class="badge rating">1650</span>
-                <span class="username">BrysonWF</span>
-            </li>
-            <li class="list-group-item">
-                <span class="badge rating">1250</span>
-                <span class="username">Other User</span>
-            </li>
-        </ul>
+    </div>
+    <div class="list-group user-list friends-list">
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1850</span>
+            <span class="username">AnotherGuy</span>
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1650</span>
+            <span class="username">BrysonWF</span>
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1250</span>
+            <span class="username">Other User</span>
+        </a>
+    </div>
+    <div class="container-fluid">
         <h4>Everyone <small><a href="#">Leaderboard</a></small></h4>
-        <ul class="list-group user-list everyone-list">
-            <li class="list-group-item">
-                <span class="badge rating">1850</span>
-                <span class="username">AnotherGuy</span>
-            </li>
-            <li class="list-group-item">
-                <span class="badge rating">1650</span>
-                <span class="username">BrysonWF</span>
-            </li>
-            <li class="list-group-item">
-                <span class="badge rating">1250</span>
-                <span class="username">Other User</span>
-            </li>
-        </ul>
+    </div>
+    <div class="list-group user-list everyone-list">
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1850</span>
+            <span class="username">AnotherGuy</span>
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1650</span>
+            <span class="username">BrysonWF</span>
+        </a>
+        <a href="#" class="list-group-item">
+            <span class="badge rating">1250</span>
+            <span class="username">Other User</span>
+        </a>
     </div>
 </section>
 
@@ -220,7 +231,7 @@
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Hi, welcome to AOE2! Send Chat Messages here.">
                     <span class="input-group-btn">
-                    <button class="btn btn-primary" type="button">Send</button>
+                    <button class="btn btn-primary" type="button"><span class="glyphicon glyphicon-chevron-right"></span></button>
                 </span>
             </div><!-- /input-group -->
         </form>

@@ -18,6 +18,10 @@
     margin-top: 20px;
 }
 
+.nav-tabs .glyphicon-user{
+    margin-left: 5px;
+}
+
 /* toolbar */
 .toolbar{
     padding: 15px;
@@ -65,7 +69,7 @@
     margin:0;
     padding:0 4px;
     font-size:1em;
-    color:rgba(0,0,0,.3);;
+    color:rgba(0,0,0,.3);
     background-color: rgba(255,255,255,.4);
 }
 .games-list li .occupancy{
@@ -81,6 +85,11 @@
     /*color:#ccc;*/
     /*background-color: rgba(255,255,255,.5);*/
 }
+.games-list li .occupancy .glyphicon-user{
+    color: rgba(0,0,0,.3);
+    font-size: .8em;
+}
+
 .games-list li .title{
     padding: 0;
     margin:0;
@@ -107,10 +116,8 @@
 .user-list{
     border-radius: 0;
 }
-.user-list li{
+.user-list .list-group-item{
     border:0;
-    padding-left: 0;
-    padding-right: 0;
     border-top:1px solid #ddd;
     border-bottom:1px solid #ddd;
     border-radius: 0 !important;
